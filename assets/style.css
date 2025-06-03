@@ -36,3 +36,37 @@ input {
     color: black;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .item-compra {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    input[type="text"],
+    .itens-comprados {
+        min-width: auto !important;
+        width: calc(100% - 40px) !important;
+        margin-right: 10px;
+    }
+
+    .is-flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .item-compra {
+        font-size: 0.9rem;
+    }
+}
+
+
